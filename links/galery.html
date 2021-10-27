@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora</title>
+    <link rel="stylesheet" href="../css/style-galery.css">
+    <link rel="stylesheet" href="../css/media-tablet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Teko:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b3524b6971.js" crossorigin="anonymous"></script>
+    <script defer src="../js/index.js"></script>
+</head>
+<body>
+    <div class="background-galery">
+        <header class="header">
+            <nav class="nav">
+                <a href="../index.html" class="logo">Aurora</a>
+
+                <button class="nav-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a href="us.html" class="nav-menu-link">Nosotros</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="galery.html" class="nav-menu-link">Galeria</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="join.html" class="nav-menu-link">Unite</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="api">
+            <div class="nasa-data">
+                <div v-if='tipo === "image"'>
+                    <h1>{{titulo}}</h1>
+                    <p>{{fecha}}</p>
+                    <p>{{explicacion}}</p>
+                </div>
+
+                <div v-else-if='tipo === "video"'>
+                    <h1>Deep Field</h1>
+                    <p>2018-11-12</p>
+                    <p>The film – Deep Field: The Impossible Magnitude of our Universe – illuminates the score by combining Hubble’s stunning imagery, including never-seen-before galaxy fly-bys, with bespoke animations to create an immersive, unforgettable journey from planet Earth to the furthest edges of our universe.
+                    The film is a first-of-its-kind collaboration between Grammy® award-winning composer & conductor Eric Whitacre, producers Music Productions, scientists and visualizers from the Space Telescope Science Institute and multi award-winning artists 59 Productions. The score and film paint the incredible story of the Hubble Deep Field. Turning its gaze to a tiny and seemingly dark area of space (around one 24-millionth of the sky) for an 11-day long period, the Hubble Space Telescope revealed over 3,000 galaxies that had never previously been seen, each one composed of hundreds of billions of stars.        
+                    The soundtrack features a new, epic Virtual Choir representing 120 countries: over 8,000 voices aged 4 to 87, alongside the Royal Philharmonic Orchestra and Eric Whitacre Singers.</p>
+                </div>
+
+            </div>
+
+            <div class="nasa-image">
+                <div class="divs-nasa" v-if='tipo === "image"'>
+                    <img :src="imagen" alt="Nasa API Image" width="700" height="600">
+                </div>
+
+                <div class="divs-nasa" v-else-if='tipo === "video"'>
+                    <iframe width="700" height="600" src="https://www.youtube.com/embed/yDiD8F9ItX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_section">
+            <footer class="fotter">
+                <span class="footer_text">Aurora © 2021</span>
+                <a href="https://twitter.com/blueorigin" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/spacex" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/nasa/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="../js/nasa-api.js"></script>
+</body>
+</html>

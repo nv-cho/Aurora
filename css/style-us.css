@@ -1,0 +1,157 @@
+html{
+    height: 100%;
+}
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    background-color: black;
+
+    height: 100vh;
+}
+
+/* -------NAVIGATION STYLE------ */
+.header{
+    background-color: transparent;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 99;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-menu{
+    list-style: none;
+
+    display: flex;
+    margin-right: 40px;
+    line-height: 80px;
+
+    font-size: 25px;
+}
+
+.nav-menu-item{    
+    width: max-content;
+    margin: 0 10px;
+    padding: 0px 12px;
+}
+
+.nav-menu-link {
+    position: relative;
+}
+
+.nav-menu-link:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-menu-link:hover:after{
+    width: 100%;
+}
+
+.logo{
+    font-size: 40px;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-toggle {
+    color:white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+
+/*             MAIN STYLE           */
+.background-us{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url("../images/background-us.jpg");
+    background-color: #000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-us {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    height: 100%;
+    width: 100%;
+
+
+    align-items: center;
+
+}
+
+.main {
+    width: 40%;
+    padding-left: 25px;
+
+    align-content: center;
+    justify-content: center;
+    text-align:center;
+}
+
+.iframe {
+    margin: 0 auto;
+    
+}
+
+.footer_section {
+    height: 7%;
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon{
+    padding: 0 10px;
+    font-size: 1.3em;
+
+    text-decoration: none;
+    color: white;
+}
+
+.footer_text {
+    padding: 0 10px;
+}
+
+

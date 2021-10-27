@@ -1,0 +1,191 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+body{
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    background-color: black;
+
+    height: 100%;
+}
+
+/* -------NAVIGATION STYLE------ */
+.header{
+    background-color: transparent;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 99;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-menu{
+    list-style: none;
+
+    display: flex;
+    margin-right: 40px;
+    line-height: 80px;
+
+    font-size: 25px;
+}
+
+.nav-menu-item{    
+    width: max-content;
+    margin: 0 10px;
+    padding: 0px 12px;
+}
+
+.nav-menu-link {
+    position: relative;
+}
+
+.nav-menu-link:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-menu-link:hover:after{
+    width: 100%;
+}
+
+.logo{
+    font-size: 40px;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-toggle {
+    color:white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+
+/* MAIN STYLE */
+.background-join{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/2706654/pexels-photo-2706654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-color: #000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form{
+    position: relative;
+    max-width: 992px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    padding: 1.5em;
+}
+
+.form-section{
+    box-shadow: 0 0 20px 0 white;
+}
+
+.form-section > * {
+    padding: 1em;
+}
+
+.form-head{
+
+    font-size:1.5em;
+}
+
+.contact-form form p{
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid gray;
+    color: white;
+    outline: none;
+}
+
+.contact-form form button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    outline: none;
+    border-radius: 4px;
+    border-width: 0.7px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Cairo', sans-serif;
+    font-weight:bold;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: white;
+    color:black;
+    transition: background-color 0.4s ease-out;
+}
+
+.footer_section {
+    height: 7%;
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon{
+    padding: 0 10px;
+    font-size: 1.3em;
+
+    text-decoration: none;
+    color: white;
+}
+
+.footer_text {
+    padding: 0 10px;
+}
