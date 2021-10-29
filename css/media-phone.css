@@ -1,0 +1,42 @@
+@media (max-width: 640px) {
+    .header {
+    
+        
+    }
+
+    /* MAIN RESPONSIVE */
+
+    .first_content_section {
+        font-size: 0.9em;
+        margin-top: 50px;
+        
+    }
+
+    .second_content_section {
+        font-size: 0.9em;
+    }
+
+    .footer_section{
+        font-size: 0.9em;
+    }
+
+    /* US RESPONSIVE */
+
+    .main{
+        font-size: 0.9em;
+    }
+
+    .iframe iframe {
+        display: none;
+    }
+
+    .iframe a {
+        display: block;
+    }
+    
+    .footer_section {
+        font-size: 0.9em;
+    }
+
+
+}

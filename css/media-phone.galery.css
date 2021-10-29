@@ -1,0 +1,19 @@
+@media (max-width: 640px){
+        /* GALERY RESPONSIVE */
+        body {
+            height: 130%;
+        }
+        .nasa-data{
+            font-size: 0.9em;
+        }
+    
+        .nasa-image img {
+            width: 400px;
+            height: 300px;
+        }
+        
+        #api{
+            padding-left: 0px;
+            
+        }
+}
