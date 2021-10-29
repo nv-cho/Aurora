@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+}
+
 *,
 *:before,
 *:after{
@@ -17,7 +21,7 @@ body{
     color: white;
     background-color: black;
 
-    
+    height: 100%;
 }
 
 /* -------NAVIGATION STYLE------ */
@@ -93,7 +97,7 @@ body{
 .background-galery{
     display: flex;
     flex-direction: column;
-    
+    height: 100%;
 
     background-image: url("../images/background-galery.webp");
     background-color: #000;
