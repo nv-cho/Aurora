@@ -8,8 +8,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style-join.css">
     <link rel="stylesheet" href="../css/media-tablet.css">
-    <!-- ANIMATED CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +15,9 @@
     <!-- JS Y FONT AWESOME -->
     <script src="https://kit.fontawesome.com/b3524b6971.js" crossorigin="anonymous"></script>
     <script defer src="../js/index.js"></script>
+    <script defer src="../js/validacion-form.js"></script>
+    <!-- FAVICON -->
+    <link rel="icon" href="../images/favicon.png" type="image/png">
 </head>
 <body>
     <div class="background-join">
@@ -42,26 +43,27 @@
             </nav>
         </header>
 
-        <div class="form">
+        <div id="form" class="form">
             <div class="form-section">
                 <div class="form-head">
                     <h1>Ser parte</h1>
                     <p>Si te gustaria recibir informacion semanal acerca del cosmos, o eventos que organicemos, puedes unirte completando el siguiente formulario:</p>
+                    <p id="parrafo"></p>
                 </div>
 
                     <div class="contact-form">
                         <form action="">
                             <p>
-                                <label for="fullname">Nombre Completo</label>
-                                <input type="text" name="fullname" id="fullname" required>
+                                <label for="fullname">Nombre Completo*</label>
+                                <input id="nombre" type="text" name="fullname" id="fullname">
                             </p>
                             <p>
-                                <label for="email">Email</label>
-                                <input type="text" name="email" id="email" required>
+                                <label for="email">Email*</label>
+                                <input id="email" type="text" name="email" id="email">
                             </p>
                             <p>
-                                <label for="phone">Telefono</label>
-                                <input type="tel" name="phone" id="phone" required>
+                                <label for="phone">Telefono*</label>
+                                <input id="telefono" type="tel" name="phone" id="phone">
                             </p>
                             <p>
                                 <label for="suggest">¿Como conociste Aurora?</label>
